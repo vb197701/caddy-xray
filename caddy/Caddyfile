@@ -1,0 +1,4 @@
+yourdomain.com {
+    reverse_proxy /xray 127.0.0.1:10000
+    tls /etc/ssl/private/xray.crt /etc/ssl/private/xray.key
+}

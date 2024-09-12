@@ -1,0 +1,17 @@
+services:
+  caddy:
+    image: caddy:latest
+    volumes:
+      - ./caddy/Caddyfile:/etc/caddy/Caddyfile
+      - ./cert:/etc/ssl/private
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: always
+
+  xray:
+    image: teddysun/xray
+    volumes:
+      - ./xray:/etc/xray
+      - ./cert:/etc/ssl/private
+    restart: always
