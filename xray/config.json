@@ -7,7 +7,7 @@
     "protocol": "vless",
     "settings": {
       "clients": [{
-        "id": "your-uuid",
+        "id": "1e48c222-9fbd-4399-8f24-a46494ea3f5e",
         "flow": "xtls-rprx-direct"
       }]
     },
